@@ -48,6 +48,7 @@ with open("search_results_urls.txt",'r') as urllist:
                 # Articles
                 for article in data['articles']:
                     try:
+                        article['url'] = 'https://www.zooplus.de' + article['url']
                         if article['rating_score'] == None:
                             article['rating_score'] = 5
                         else:
