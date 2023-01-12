@@ -1,0 +1,39 @@
+articles:
+    css: 'article.result-intro '
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        url:
+            css: 'a'
+            type: Attribute
+            attribute: href
+        title:
+            css: 'div.result-intro__details header h1'
+            type: Text
+        subtitle:
+            css: 'div.result-intro__body .result-intro__subheader h2'
+            type: Text
+        working_hours:
+            css: 'div.result-intro__body .result-intro__hours .daily-hours__range'
+            type: Text
+        address:
+            css: 'div.result-intro__body .result-intro__address'
+            type: Text
+        rating_score:
+            css: 'div.result-intro__body .result-intro__rating .result-intro__rating__score .star-rating .u-text-xxlight'
+            multiple: true
+            type: Text
+        rating_note:
+            css: 'div.result-intro__body .result-intro__rating .result-intro__rating__note'
+            type: Text
+
+categories:
+    css: '.search-refine__fieldset div div .checkbox'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        category:
+            css: 'label'
+            type: Text
