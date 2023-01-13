@@ -52,7 +52,7 @@ with open("search_results_urls.txt",'r') as urllist:
                         if article['rating_score'] == None:
                             article['rating_score'] = 5
                         else:
-                            article['rating_score'] = 5 - article['rating_score']
+                            article['rating_score'] = 5 - len(article['rating_score'])
                     except:
                         pass
 
